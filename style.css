@@ -1,0 +1,221 @@
+@import "./css/reset.css";
+@import "./css/home.css";
+
+:root {
+    --branco: #FFFFFF;
+    --azul: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --cinza-escuro: #464646;
+    --cinza-claro: #a2a2a2;
+    --cinza-sombra: #c8c8c8;
+
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-escuro);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+button, a {
+    font-family: var(--fonte-principal);
+    border: none;
+    box-shadow: none;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/* ---------------------------------- header */
+.cabecalho {
+    background-color: var(--branco);
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__logo {
+    width: 6.25rem;
+}
+
+.cabecalho__botao {
+    color: var(--azul);
+    background-color: var(--branco);
+    border: 1px solid var(--azul);
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 8.25rem;
+}
+
+/* --------------------------------- banner */
+.banner {
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
+        url("./img/banner-promo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--branco);
+    padding: 4.875rem 1rem 1rem;
+    font-weight: 600;
+}
+
+.banner__titulo {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    margin-bottom: .5rem;
+}
+
+.banner__subtitulo {
+    font-size: .875rem;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+}
+
+.banner__botao {
+    padding: .875rem 1rem;
+    background-color: var(--azul);
+    display: inline-block;
+    font-size: .875rem;
+}
+
+
+/* --------------------------------- categoria */
+.categoria {
+    padding: 1rem;
+    background-color: var(--branco);
+}
+
+.categoria__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.categoria__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.categoria__link {
+    color: var(--azul);
+    font-size: .875rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: .25rem
+}
+
+.categoria__lista {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.categoria__lista-imagem {
+    width: 9.75rem;
+    height: 10.875rem;
+    object-fit: cover;
+}
+
+.categoria__lista-produto {
+    line-height: 1rem;
+    margin: .5rem 0;
+    font-weight: 500;
+}
+
+.categoria__lista-preco {
+    font-size: 1rem;
+    line-height: 1.187rem;
+    margin-bottom: .5rem;
+}
+
+.categoria__lista-link {
+    color: var(--azul);
+}
+
+/* --------------------------------- footer */
+
+.rodape {
+    background-color: var(--azul-claro);
+    padding: 1rem;
+}
+
+.rodape__institucional {
+    text-align: center;
+}
+
+.rodape__lista-item {
+    padding: .5rem;
+}
+
+.rodape__formulario {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+}
+
+.rodape__titulo {
+    font-weight: 700;
+}
+
+.rodape__campos {
+    margin: .5rem 0;
+    border: none;
+    box-shadow: 0 1px .5px var(--cinza-sombra);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    width: 100%;
+}
+
+.rodape__nome-input {
+    height: 3.5rem;
+}
+
+.rodape__mensagem {
+    resize: none;
+    height: 5.125rem;
+}
+
+.rodape__campos::placeholder {
+    font-size: 1rem;
+    padding: .75rem;
+    color: var(--cinza-claro);
+    font-weight: 400;
+}
+
+.rodape__botao {
+    color: var(--branco);
+    background-color: var(--azul);
+    padding: .75rem 1rem;
+    width: 9.437rem;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.rodape__texto {
+    background-color: var(--branco);
+    padding: 2rem 3rem;
+    text-align: center;
+    line-height: 1.187rem;
+}
+
+
+/* --------------------------------- TABLET */
+@media screen and (min-width: 768px) {
+    
+}
