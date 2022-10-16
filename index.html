@@ -14,18 +14,26 @@
 <body>
 
     <header class="cabecalho">
-        <a href="#">
-            <img src="./img/logo-alurageek.svg" alt="Logo do AluraGeek" class="cabecalho__logo">
-        </a>
+        <nav class="cabecalho__nav">
+            <a href="#">
+                <img src="./img/logo-alurageek.svg" alt="Logo do AluraGeek" class="cabecalho__logo">
+            </a>
+            <div class="cabecalho__pesquisa">
+                <i class="cabecalho__pesquisa-icone"><img src="./img/icone-pesquisa.svg" alt="ícone de busca"></i>
+                <input type="search" placeholder="O que deseja encontrar?" class="cabecalho__pesquisa-campo">
+            </div>
+        </nav>
         <a class="cabecalho__botao">Login</a>
-        <img src="./img/icone-pesquisa.svg" alt="Ícone de busca">
+        <img src="./img/icone-pesquisa-mobile.svg" alt="Ícone de busca" class="cabecalho__pesquisa-mobile">
     </header>
 
     <main>
         <section class="banner">
-            <h2 class="banner__titulo">Dezembro Promocional</h2>
-            <h3 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h3>
-            <a href="#" class="banner__botao">Ver Consoles</a>
+            <div class="banner__texto">
+                <h2 class="banner__titulo">Dezembro Promocional</h2>
+                <h3 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h3>
+                <a href="#" class="banner__botao">Ver Consoles</a>
+            </div>
         </section>
 
         <section class="categoria">
@@ -55,6 +63,18 @@
                 <li>
                     <img src="./img/produto-starwars-4.jpg" alt="Boneco Star Wars" class="categoria__lista-imagem">
                     <h3 class="categoria__lista-produto">Produto XYZ</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-starwars-5.jpg" alt="Boneco Yoda" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Boneco Yoda</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-starwars-6.jpg" alt="Boneco Star Wars" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Boneco Darth Vader</h3>
                     <p class="categoria__lista-preco">R$ 60,00</p>
                     <a href="#" class="categoria__lista-link">Ver produto</a>
                 </li>
@@ -91,6 +111,18 @@
                     <p class="categoria__lista-preco">R$ 60,00</p>
                     <a href="#" class="categoria__lista-link">Ver produto</a>
                 </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-consoles-5.jpg" alt="Console Xbox" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Produto XYZ</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-consoles-6.jpg" alt="Game Boy Color" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Game Boy Color</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
             </ul>          
         </section>
 
@@ -120,7 +152,19 @@
                 </li>
                 <li>
                     <img src="./img/produto-diversos-4.jpg" alt="Rádio Relógio Retro" class="categoria__lista-imagem">
-                    <h3 class="categoria__lista-produto">Produto XYZ</h3>
+                    <h3 class="categoria__lista-produto">Controle e console XYZ</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-diversos-5.jpg" alt="Óculos de Realidade Virtual" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Óculos Realidade Virtual</h3>
+                    <p class="categoria__lista-preco">R$ 60,00</p>
+                    <a href="#" class="categoria__lista-link">Ver produto</a>
+                </li>
+                <li class="categoria__desktop">
+                    <img src="./img/produto-diversos-6.jpg" alt="Fantasia Pokémon" class="categoria__lista-imagem">
+                    <h3 class="categoria__lista-produto">Fantasia Pokémon</h3>
                     <p class="categoria__lista-preco">R$ 60,00</p>
                     <a href="#" class="categoria__lista-link">Ver produto</a>
                 </li>

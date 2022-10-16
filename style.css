@@ -8,6 +8,7 @@
     --cinza-escuro: #464646;
     --cinza-claro: #a2a2a2;
     --cinza-sombra: #c8c8c8;
+    --search-background: #F5F5F5;
 
     --fonte-principal: 'Raleway', sans-serif;
 }
@@ -40,6 +41,10 @@ button, a {
     width: 6.25rem;
 }
 
+.cabecalho__pesquisa {
+    display: none;
+}
+
 .cabecalho__botao {
     color: var(--azul);
     background-color: var(--branco);
@@ -67,6 +72,11 @@ button, a {
     font-weight: 600;
 }
 
+.banner__texto {
+    width: 20.5rem;
+    margin: auto;
+}
+
 .banner__titulo {
     font-weight: 700;
     font-size: 1.375rem;
@@ -91,7 +101,10 @@ button, a {
 /* --------------------------------- categoria */
 .categoria {
     padding: 1rem;
+    margin: auto;
     background-color: var(--branco);
+    max-width: 22.5rem;
+    box-sizing: border-box;
 }
 
 .categoria__info {
@@ -104,6 +117,7 @@ button, a {
 .categoria__titulo {
     font-size: 1.375rem;
     font-weight: 700;
+    line-height: 1.625rem;
 }
 
 .categoria__link {
@@ -123,6 +137,10 @@ button, a {
     gap: 1rem;
     font-size: .875rem;
     font-weight: 700;
+}
+
+.categoria__desktop {
+    display: none;
 }
 
 .categoria__lista-imagem {
@@ -156,6 +174,7 @@ button, a {
 
 .rodape__institucional {
     text-align: center;
+    line-height: 1.1875rem;
 }
 
 .rodape__lista-item {
@@ -170,6 +189,7 @@ button, a {
 
 .rodape__titulo {
     font-weight: 700;
+    line-height: 1.1875rem;
 }
 
 .rodape__campos {
@@ -209,7 +229,8 @@ button, a {
 
 .rodape__texto {
     background-color: var(--branco);
-    padding: 2rem 3rem;
+    margin: 2rem auto;
+    width: 15rem;
     text-align: center;
     line-height: 1.187rem;
 }
@@ -217,5 +238,221 @@ button, a {
 
 /* --------------------------------- TABLET */
 @media screen and (min-width: 768px) {
+
+    .cabecalho {
+        margin: 1rem 2rem; 
+    }
+
+    .cabecalho__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 53vw;
+    }
+
+    .cabecalho__pesquisa {
+        display: block;
+        position: relative;
+    }
+
+    .cabecalho__pesquisa-icone {
+        position: absolute;
+        padding: .5rem 30vw;
+    }
+
+    .cabecalho__pesquisa-campo {
+        background-color: var(--search-background);
+        border-radius: 1.25rem;
+        border: none;
+        padding: .75rem 1rem; 
+        width: 35vw;
+        max-width: 24.562rem;
+    }
+
+    .cabecalho__pesquisa-campo::placeholder {
+        font-family: var(--fonte-principal);
+        font-size: .875rem;
+        font-weight: 400;
+        color: var(--cinza-claro);
+        line-height: 1rem;
+    }
+
+    .cabecalho__pesquisa-mobile {
+        display: none;
+    }
+
+    .cabecalho__botao {
+        width: 10.375rem;
+    }
     
+    /* --------------------------------- banner */
+    
+    .banner {
+        height: 22rem;
+        box-sizing: border-box;
+        padding: 10.062rem 2rem 2rem;
+        font-weight: 700;
+    }
+
+    .banner__texto {
+        width: 44rem;
+    }
+
+    .banner__titulo {
+        font-size: 3.25rem;
+        line-height: 3.812rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner__subtitulo  {
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner__botao {
+        font-weight: 600;
+    }
+
+    /* --------------------------------- categoria */
+
+    .categoria {
+        padding: 2rem;
+        max-width: 48rem;
+    }
+
+    .categoria__link {
+        font-size: 1rem;
+        line-height: 1.187rem;
+        gap: .5rem;
+    }
+
+    .categoria__lista-imagem {
+        width: 10.25rem;
+    }
+
+    .categoria__lista-link {
+        font-size: 1rem;
+    }
+
+    
+/* --------------------------------- footer */
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 2rem 2rem 1.5rem;
+        gap: 5.875rem;
+    }
+    
+    .rodape__institucional {
+        text-align: left;
+    }
+
+    .rodape__lista-item {
+        padding: 1rem 0 .5rem;
+    }
+
+    .rodape__formulario {
+        padding-top: 0;
+        width: 27.125rem;
+    }
+
+    .rodape__texto {
+        width: 15rem;
+        padding: 2rem auto;
+    }   
+}
+
+/*------------------------------DESKTOP*/
+
+@media screen and (min-width: 1280px) {
+
+    .cabecalho {
+        margin: 2rem auto;
+        max-width: 79vw; 
+    }
+
+    .cabecalho__logo {
+        width: 11rem;
+    }
+
+    .cabecalho__nav {
+        width: 42vw;
+    }
+
+    .cabecalho__pesquisa-icone {
+        padding: .5rem 24.5vw;
+    }
+
+    .cabecalho__botao {
+        width: 11.375rem;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* --------------------------------- banner */
+
+    .banner {
+        padding: 9.375rem 2rem 2rem;
+    }
+
+    .banner__texto {
+        width: 71rem;
+    }
+
+    .banner__botao {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1rem;
+    } 
+
+    /* --------------------------------- categoria */
+
+    .categoria {
+        padding: 4rem 0 2rem;
+        max-width: 71rem;
+    }
+
+    .categoria__titulo {
+        font-size: 2rem;
+        line-height: 2.375rem;
+    }
+
+
+    .categoria__desktop {
+        display: block;
+    }
+
+    .categoria__lista-imagem {
+        width: 11rem;
+    }
+
+    /* --------------------------------- footer */
+
+    .rodape {
+        margin-top: 2rem;
+        gap: 7rem;
+        padding: 4rem 0 3.5rem;
+    }
+
+    .rodape__institucional {
+        display: flex;
+        justify-content: space-between;
+        width: 29rem;
+    }
+
+    .rodape__formulario {
+        width: 35rem;
+    }
+
+    .rodape__botao {
+        padding: 1rem;
+        width: 10.312rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
 }
