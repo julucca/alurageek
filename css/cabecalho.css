@@ -1,0 +1,112 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--branco);
+    margin: 1rem;
+    width: 91vw; 
+}
+
+.cabecalho__logo {
+    width: 28vw;
+}
+
+.cabecalho__pesquisa {
+    display: none;
+}
+
+.cabecalho__botao {
+    color: var(--azul);
+    background-color: var(--branco);
+    box-sizing: border-box;
+    border: 1px solid var(--azul);
+    font-weight: 600;
+    font-size: .875rem;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    width: 37vw;
+}
+
+.cabecalho__botao:hover {
+    background-color: var(--azul-botao-hover);
+}
+
+@media screen and (min-width: 768px) {
+    
+    .cabecalho {
+        margin: 1rem 2rem; 
+    }
+
+    .cabecalho__logo {
+        width: 13.125vw;
+    }
+
+    .cabecalho__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 53vw;
+    }
+
+    .cabecalho__pesquisa {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cabecalho__pesquisa-icone {
+        position: absolute;
+        padding: .5rem .75rem;
+    }
+
+    .cabecalho__pesquisa-campo {
+        background-color: var(--search-background);
+        border-radius: 1.25rem;
+        border: none;
+        padding: .75rem 1rem; 
+        width: 35vw;
+    }
+
+    .cabecalho__pesquisa-campo::placeholder {
+        color: var(--cinza-claro);
+        font-family: var(--fonte-principal);
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+
+    .cabecalho__pesquisa-mobile {
+        display: none;
+    }
+
+    .cabecalho__botao {
+        width: 21.65vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cabecalho {
+        margin: 2rem auto;
+        width: 79vw; 
+    }
+
+    .cabecalho__logo {
+        width: 12.225vw;
+    }
+
+    .cabecalho__nav {
+        width: 42vw;
+    }
+
+    .cabecalho__pesquisa-campo {
+        width: 26.5vw;
+    }
+
+    .cabecalho__botao {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1rem;
+        width: 12.64vw;
+    }
+}
