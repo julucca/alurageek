@@ -1,7 +1,6 @@
 @import "./css/reset.css";
 @import "./css/cabecalho.css";
-@import "./css/home.css";
-
+@import "./css/banner.css";
 
 :root {
     --branco: #FFFFFF;
@@ -36,44 +35,7 @@ button, a {
 /*  componente: cabecalho.css */
 
 /* --------------------------------- banner */
-.banner {
-    background: 
-        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
-        url("./img/banner-promo.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: var(--branco);
-    padding: 4.875rem 1rem 1rem;
-    font-weight: 600;
-}
-
-.banner__texto {
-    width: 20.5rem;
-    margin: auto;
-}
-
-.banner__titulo {
-    font-weight: 700;
-    font-size: 1.375rem;
-    line-height: 1.625rem;
-    margin-bottom: .5rem;
-}
-
-.banner__subtitulo {
-    font-size: .875rem;
-    line-height: 1rem;
-    margin-bottom: .5rem;
-}
-
-.banner__botao {
-    padding: .875rem 1rem;
-    background-color: var(--azul);
-    display: inline-block;
-    font-size: .875rem;
-}
-
+/*  componente: banner.css */
 
 /* --------------------------------- categoria */
 .categoria {
@@ -219,36 +181,6 @@ button, a {
 /* --------------------------------- TABLET */
 @media screen and (min-width: 768px) {
 
-    
-    /* --------------------------------- banner */
-    
-    .banner {
-        height: 22rem;
-        box-sizing: border-box;
-        padding: 10.062rem 2rem 2rem;
-        font-weight: 700;
-    }
-
-    .banner__texto {
-        width: 44rem;
-    }
-
-    .banner__titulo {
-        font-size: 3.25rem;
-        line-height: 3.812rem;
-        margin-bottom: 1rem;
-    }
-
-    .banner__subtitulo  {
-        font-size: 1.375rem;
-        line-height: 1.625rem;
-        margin-bottom: 1rem;
-    }
-
-    .banner__botao {
-        font-weight: 600;
-    }
-
     /* --------------------------------- categoria */
 
     .categoria {
@@ -303,25 +235,6 @@ button, a {
 /*------------------------------DESKTOP*/
 
 @media screen and (min-width: 1280px) {
-
-    
-
-    /* --------------------------------- banner */
-
-    .banner {
-        padding: 9.375rem 2rem 2rem;
-    }
-
-    .banner__texto {
-        width: 71rem;
-    }
-
-    .banner__botao {
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 1rem;
-        padding: 1rem;
-    } 
 
     /* --------------------------------- categoria */
 

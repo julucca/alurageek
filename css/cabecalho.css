@@ -9,6 +9,8 @@
 
 .cabecalho__logo {
     width: 28vw;
+    max-width: 8rem;
+    min-width: 6rem;
 }
 
 .cabecalho__pesquisa {
@@ -26,6 +28,7 @@
     text-align: center;
     text-decoration: none;
     width: 37vw;
+    max-width: 10rem;
 }
 
 .cabecalho__botao:hover {
