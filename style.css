@@ -2,8 +2,9 @@
 @import "./css/cabecalho.css";
 @import "./css/banner.css";
 @import "./css/produtos.css";
-@import "./css/botoes.css";
 @import "./css/rodape.css";
+@import "./css/botoes.css";
+@import "./css/formularios.css";
 
 :root {
     --branco: #FFFFFF;
@@ -41,4 +42,5 @@ CSS HOME | index.html
 - categoria: produtos.css
 - footer: rodape.css
 - botões header/banner/footer: botoes.css
+- form: formularios.css
 */

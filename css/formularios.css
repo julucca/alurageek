@@ -1,0 +1,55 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-rodape {
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    max-width: 22.5rem;
+}
+
+.formulario-rodape__titulo {
+    font-weight: 700;
+}
+
+.formulario-rodape__inputs {
+    border: none;
+    border-radius: .25rem;
+    box-shadow: 0 1px .5px var(--cinza-sombra);
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.formulario-rodape__inputs::placeholder {
+    color: var(--cinza-claro);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .75rem;
+}
+
+.formulario-rodape__nome {
+    height: 3.5rem;
+}
+
+.formulario-rodape__mensagem {
+    height: 5.125rem;
+    resize: none;
+}
+
+@media screen and (min-width: 768px) {
+    .formulario-rodape {
+        max-width: 29rem;
+        padding-top: 0;
+        width: 56.512vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .formulario-rodape {
+        margin: 0;
+        max-width: 35rem;
+    }
+}
