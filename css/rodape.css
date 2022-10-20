@@ -1,0 +1,145 @@
+.rodape {
+    background-color: var(--azul-claro);
+    line-height: 1.1875rem;
+    padding: 1rem;
+}
+
+.rodape__institucional {
+    text-align: center;
+}
+
+.rodape__logo {
+    max-width: 11rem;
+    width: 70vw;
+}
+
+.rodape__lista-item {
+    display: block;
+    color: var(--cinza-escuro);
+    padding: .5rem;
+}
+
+.rodape__formulario {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    max-width: 22.5rem;
+}
+
+.rodape__titulo {
+    font-weight: 700;
+}
+
+.rodape__campos {
+    border: none;
+    border-radius: .25rem;
+    box-shadow: 0 1px .5px var(--cinza-sombra);
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.rodape__nome-input {
+    height: 3.5rem;
+}
+
+.rodape__mensagem {
+    height: 5.125rem;
+    resize: none;
+}
+
+.rodape__campos::placeholder {
+    color: var(--cinza-claro);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .75rem;
+}
+
+.rodape__botao {
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: .875rem;
+    font-weight: 600;
+    padding: .75rem 1rem;
+    width: 9.437rem;
+}
+
+.rodape__texto {
+    background-color: var(--branco);
+    line-height: 1.187rem;
+    margin: 2rem auto;
+    max-width: 15rem;
+    text-align: center;
+    width: 70vw;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .rodape {
+        padding: 2rem 2rem 1.5rem;
+    }
+    
+    .rodape__container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 0 auto;
+        max-width: 47rem;
+    }
+    
+    .rodape__institucional {
+        max-width: 17rem;
+        text-align: left;
+        width: 33.073vw;
+    }
+
+    .rodape__lista-item {
+        padding: 1rem 0 .5rem;
+    }
+
+    .rodape__formulario {
+        max-width: 29rem;
+        padding-top: 0;
+        width: 56.512vw;
+    }
+
+    .rodape__texto {
+        padding: 2rem auto;
+        width: 15rem;
+    }   
+}
+
+@media screen and (min-width: 1280px) {
+    .rodape {
+        padding: 4rem auto 3.5rem;
+    }
+
+    .rodape__container {
+        gap: 7rem;
+        margin-top: 2rem;
+        max-width: 71rem;
+        width: 71rem;
+    }
+
+    .rodape__institucional {
+        display: flex;
+        justify-content: space-between;
+        max-width: none;
+        width: 29rem;
+    }
+
+    .rodape__formulario {
+        margin: 0;
+        max-width: 35rem;
+    }
+
+    .rodape__botao {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1rem;
+        width: 10.312rem;
+    }
+}
