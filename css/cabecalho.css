@@ -17,7 +17,7 @@
     display: none;
 }
 
-.cabecalho__botao {
+/* .cabecalho__botao {
     color: var(--azul);
     background-color: var(--branco);
     box-sizing: border-box;
@@ -32,8 +32,8 @@
 }
 
 .cabecalho__botao:hover {
-    background-color: var(--azul-botao-hover);
-}
+    background-color: var(--azul-claro-hover);
+} */
 
 @media screen and (min-width: 768px) {
     
@@ -82,9 +82,9 @@
         display: none;
     }
 
-    .cabecalho__botao {
+    /* .cabecalho__botao {
         width: 21.65vw;
-    }
+    } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -106,10 +106,10 @@
         width: 26.5vw;
     }
 
-    .cabecalho__botao {
+    /* .cabecalho__botao {
         font-size: 1rem;
         font-weight: 400;
         padding: 1rem;
         width: 12.64vw;
-    }
+    } */
 }

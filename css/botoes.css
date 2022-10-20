@@ -1,0 +1,71 @@
+.botao {
+    background-color: var(--azul);
+    padding: .75rem 1rem;
+    display: inline-block;
+
+    color: var(--branco);
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.botao:hover {
+    background-color: var(--azul-medio-hover);
+}
+
+.botao__banner {
+    display: inline-block;
+    margin-top: .5rem;
+}
+
+.botao__rodape {
+    padding: .75rem 1rem;
+    width: 9.437rem; 
+}
+
+.botao--alternativo {
+    background-color: var(--branco);
+    box-sizing: border-box;
+    border: 1px solid var(--azul);
+    padding: .75rem;
+    max-width: 10rem;
+    text-align: center;
+    width: 37vw;
+
+    color: var(--azul);
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.botao--alternativo:hover {
+    background-color: var(--azul-claro-hover);
+}
+
+@media screen and (min-width: 768px) {
+    .botao__banner {
+        margin-top: 1rem;
+    }
+
+    .botao--alternativo {
+        width: 21.65vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .botao {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1rem;
+    }
+    .botao__rodape {
+        max-width: 10.375rem;
+        width: 10.312rem; 
+    }
+
+    .botao--alternativo {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 1rem;
+        max-width: 11.375rem;
+        width: 12.64vw;
+    }
+}

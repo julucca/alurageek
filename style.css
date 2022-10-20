@@ -2,13 +2,15 @@
 @import "./css/cabecalho.css";
 @import "./css/banner.css";
 @import "./css/produtos.css";
+@import "./css/botoes.css";
 @import "./css/rodape.css";
 
 :root {
     --branco: #FFFFFF;
     --azul: #2A7AE4;
     --azul-claro: #EAF2FD;
-    --azul-botao-hover: #D4E4FA;
+    --azul-claro-hover: #D4E4FA;
+    --azul-medio-hover: #5595E9;
     --cinza-escuro: #464646;
     --cinza-claro: #a2a2a2;
     --cinza-sombra: #c8c8c8;
@@ -29,14 +31,14 @@ button, a {
     font-family: var(--fonte-principal);
     border: none;
     box-shadow: none;
-    color: var(--branco);
     text-decoration: none;
 }
 
 /* 
-HOME | index.html
+CSS HOME | index.html
 - header: cabecalho.css
 - banner: banner.css
 - categoria: produtos.css
 - footer: rodape.css
+- botões header/banner/footer: botoes.css
 */
