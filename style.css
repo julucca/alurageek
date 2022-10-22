@@ -39,18 +39,46 @@ button, a {
     background-color: var(--cinza-bg);
 }
 
+.titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+
+.titulo__produtos {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .titulo__produtos {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .titulo {
+        font-size: 2rem;
+        line-height: 2.375rem;
+    }
+}
+
+
 /* 
-CSS HOME | index.html
+CSS ALL PAGES
 - header: cabecalho.css
+- footer: rodape.css
+
+CSS HOME | index.html
 - banner: banner.css
 - categoria: produtos.css
-- footer: rodape.css
 - botões header/banner/form/footer: botoes.css
 - form: formularios.css
 
 CSS LOGIN | login.html
-- header: cabecalho.css
 - form: formularios.css
 - botões form/footer: botoes.css
-- footer: rodape.css
+
+CSS Produtos | produtos.html
+- section todos produtos: produtos.css
+- botões section/footer: botoes.css
 */
