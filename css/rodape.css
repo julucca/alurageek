@@ -66,7 +66,7 @@
 
     .rodape__container {
         gap: 7rem;
-        margin-top: 2rem;
+        margin: 2rem auto;
         max-width: 71rem;
         width: 71rem;
     }

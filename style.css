@@ -13,9 +13,9 @@
     --azul-claro-hover: #D4E4FA;
     --azul-medio-hover: #5595E9;
     --cinza-escuro: #464646;
-    --cinza-claro: #a2a2a2;
-    --cinza-sombra: #c8c8c8;
-    --search-background: #F5F5F5;
+    --cinza-medio: #a2a2a2;
+    --cinza-claro: #c8c8c8;
+    --cinza-bg: #F5F5F5;
 
     --fonte-principal: 'Raleway', sans-serif;
 }
@@ -35,12 +35,22 @@ button, a {
     text-decoration: none;
 }
 
+.container {
+    background-color: var(--cinza-bg);
+}
+
 /* 
 CSS HOME | index.html
 - header: cabecalho.css
 - banner: banner.css
 - categoria: produtos.css
 - footer: rodape.css
-- botões header/banner/footer: botoes.css
+- botões header/banner/form/footer: botoes.css
 - form: formularios.css
+
+CSS LOGIN | login.html
+- header: cabecalho.css
+- form: formularios.css
+- botões form/footer: botoes.css
+- footer: rodape.css
 */

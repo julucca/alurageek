@@ -45,7 +45,7 @@
     }
 
     .cabecalho__pesquisa-campo {
-        background-color: var(--search-background);
+        background-color: var(--cinza-bg);
         border-radius: 1.25rem;
         border: none;
         padding: .75rem 1rem; 
@@ -53,7 +53,7 @@
     }
 
     .cabecalho__pesquisa-campo::placeholder {
-        color: var(--cinza-claro);
+        color: var(--cinza-medio);
         font-family: var(--fonte-principal);
         font-size: .875rem;
         font-weight: 400;
@@ -73,6 +73,7 @@
     }
 
     .cabecalho__logo {
+        max-width: 11rem;
         width: 12.225vw;
     }
 

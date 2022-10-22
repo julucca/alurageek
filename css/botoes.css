@@ -40,6 +40,12 @@
     background-color: var(--azul-claro-hover);
 }
 
+/* login.html */
+.botao__login {
+    margin: .5rem auto 0;
+    width: 6.815rem;
+}
+
 @media screen and (min-width: 768px) {
     .botao__banner {
         margin-top: 1rem;
@@ -56,6 +62,7 @@
         font-weight: 400;
         padding: 1rem;
     }
+    
     .botao__rodape {
         max-width: 10.375rem;
         width: 10.312rem; 
@@ -67,5 +74,14 @@
         padding: 1rem;
         max-width: 11.375rem;
         width: 12.64vw;
+    }
+
+    /* login.html */
+    .botao__login {
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.312rem;
+        padding: 1.281rem 0;
+        width: 26.337rem;
     }
 }
