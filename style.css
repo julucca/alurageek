@@ -5,6 +5,7 @@
 @import "./css/rodape.css";
 @import "./css/botoes.css";
 @import "./css/formularios.css";
+@import "./css/descricao.css";
 
 :root {
     --branco: #FFFFFF;
@@ -53,6 +54,11 @@ button, a {
     margin-bottom: .5rem;
 }
 
+.titulo__descricao {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
 @media screen and (min-width: 768px) {
     .titulo__produtos {
         margin-bottom: 0;
@@ -63,6 +69,11 @@ button, a {
     .titulo {
         font-size: 2rem;
         line-height: 2.375rem;
+    }
+
+    .titulo__descricao {
+        font-size: 3.25rem;
+        line-height: 3.812rem;
     }
 }
 
