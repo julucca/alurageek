@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/favicon-alurageek.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="../style.css">
+    <title>Admin | AluraGeek</title>
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <a href="../index.html">
+                <img src="../img/logo-alurageek.svg" alt="Logo do AluraGeek" class="cabecalho__logo">
+            </a>
+
+            <div class="cabecalho__pesquisa">   
+                <input type="search" placeholder="O que deseja encontrar?" class="cabecalho__pesquisa-campo">
+                <i class="cabecalho__pesquisa-icone"><img src="../img/icone-pesquisa.svg" alt="ícone de busca"></i>
+            </div>
+        </nav>
+
+        <a class="botao--alternativo botao-admin--alternativo" href="#">Menu administrador</a>
+
+        <img src="../img/icone-pesquisa-mobile.svg" alt="Ícone de busca" class="cabecalho__pesquisa-mobile">
+    </header>
+
+    <main class="container produto__container">
+        <section>
+            <form action="#" class="produto formulario formulario-add">
+                <h2 class="titulo titulo__add">Adicionar novo produto</h2>
+
+                <div>
+                    <label for="url"></label>
+                    <input type="url" id="url" placeholder="URL da imagem" class="formulario__inputs formulario-add__inputs">
+                </div>
+
+                <div>
+                    <label for="categoria"></label>
+                    <input type="text" id="categoria" placeholder="Categoria" class="formulario__inputs formulario-add__inputs">
+                </div>
+
+                <div>
+                    <label for="produto"></label>
+                    <input type="text" id="produto" placeholder="Nome do produto" class="formulario__inputs formulario-add__inputs">
+                </div>
+
+                <div>
+                    <label for="preco"></label>
+                    <input type="number" id="preco" placeholder="Preço do produto" class="formulario__inputs formulario-add__inputs">
+                </div>
+
+                <textarea type="text" placeholder="Descrição do produto" maxlength="120" class="formulario__inputs formulario-add__inputs formulario-rodape__mensagem"></textarea>
+                
+                <button type="submit" class="botao botao-admin">Adicionar produto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape__container">              
+                <div class="rodape__institucional">
+                    
+                    <a href="../index.html">
+                        <img src="../img/logo-alurageek.svg" alt="Logo AluraGeek" class="rodape__logo">
+                    </a>
+                    
+                    <ul class="rodape__lista">
+                        <li><a class="rodape__lista-item">Quem somos nós</a></li>
+                        <li><a class="rodape__lista-item">Política de privacidade</a></li>
+                        <li><a class="rodape__lista-item">Programa fidelidade</a></li>
+                        <li><a class="rodape__lista-item">Nossas lojas</a></li>
+                        <li><a class="rodape__lista-item">Quero ser franqueado</a></li>
+                        <li><a class="rodape__lista-item">Anuncie aqui</a></li>
+                    </ul>
+                </div>
+
+                <form action="#" class="formulario formulario-rodape">
+                    <h2 class="formulario__titulo">Fale conosco</h2>
+
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Escreva seu nome" class="formulario__inputs formulario-rodape__nome">
+                    </div>
+                    
+                    <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" class="formulario__inputs formulario-rodape__mensagem"></textarea>
+                    <button type="submit" class="botao botao__rodape">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+        
+        <p class="rodape__texto">Desenvolvido por Juliana Lucca 2022</p>
+    </footer>
+
+</body>
+</html>

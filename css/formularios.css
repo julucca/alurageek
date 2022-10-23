@@ -54,6 +54,11 @@
     padding: .625rem .75rem;
 }
 
+/* admin.html */
+.formulario-add__inputs {
+    padding: 1rem 0;
+}
+
 @media screen and (min-width: 768px) {
     .formulario-rodape {
         max-width: 29rem;
@@ -88,4 +93,10 @@
         line-height: 1.312rem;
         margin-bottom: 1.05rem;
     }
+
+    /* admin.html */
+    .formulario-add {
+        max-width: 34.937rem;
+    }
+
 }

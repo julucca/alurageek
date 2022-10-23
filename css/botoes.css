@@ -46,6 +46,19 @@
     width: 6.815rem;
 }
 
+/* admin.html */
+.botao-admin--alternativo {
+    max-width: 10.375rem;
+    width: 47vw;
+}
+
+.botao-admin {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.187rem;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     .botao__banner {
         margin-top: 1rem;
@@ -83,5 +96,15 @@
         line-height: 1.312rem;
         padding: 1.281rem 0;
         width: 26.337rem;
+    }
+
+    /* admin.html */
+    .botao-admin--alternativo {
+        max-width: 11.412rem;
+        width: 14.75vw;
+    }
+
+    .botao-admin {
+        margin-top: .5rem;
     }
 }
