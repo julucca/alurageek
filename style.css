@@ -1,5 +1,5 @@
 @import "./css/reset.css";
-@import "./css/cabecalho.css";
+@import "./css/header.css";
 @import "./css/banner.css";
 @import "./css/produtos.css";
 @import "./css/rodape.css";
@@ -76,24 +76,3 @@ button, a {
         line-height: 3.812rem;
     }
 }
-
-
-/* 
-CSS ALL PAGES
-- header: cabecalho.css
-- footer: rodape.css
-
-CSS HOME | index.html
-- banner: banner.css
-- categoria: produtos.css
-- botões header/banner/form/footer: botoes.css
-- form: formularios.css
-
-CSS LOGIN | login.html
-- form: formularios.css
-- botões form/footer: botoes.css
-
-CSS Produtos | produtos.html
-- section todos produtos: produtos.css
-- botões section/footer: botoes.css
-*/
