@@ -1,41 +1,42 @@
-.formulario {
+/* -------- form footer */
+.form__input {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: .5rem 0;
 }
 
-.formulario-rodape {
-    padding-top: 1.5rem;
-    margin: 0 auto;
-    max-width: 22.5rem;
-}
-
-.formulario__titulo {
-    font-weight: 700;
-}
-
-.formulario__inputs {
+.form__input-field {
     border: none;
-    border-radius: .25rem;
+    border-radius: 0 0 .25rem .25rem;
     box-shadow: 0 1px .5px var(--cinza-claro);
     box-sizing: border-box;
-    font-family: var(--fonte-principal);
-    margin: .5rem 0;
-    width: 100%;
+    color: var(--cinza-escuro);
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
-.formulario__inputs::placeholder {
+.form__input-field::placeholder {
     color: var(--cinza-medio);
     font-size: 1rem;
-    font-weight: 400;
-    padding: .75rem;
 }
 
-.formulario-rodape__nome {
-    height: 3.5rem;
+.form__label {
+    background-color: var(--branco);
+    border-radius: .25rem .25rem 0 0;
+    color: var(--cinza-medio);
+    font-size: .75rem;
+    padding: .5rem .75rem .25rem;   
 }
 
-.formulario-rodape__mensagem {
-    height: 5.125rem;
+.form__label-textfield {
+    padding: .25rem .75rem .437rem;
+}
+
+.form__input-textfield {
+    border-radius: .25rem;
+    margin-top: 1rem;
+    padding: 1rem .75rem 2.875rem;
     resize: none;
 }
 
@@ -60,11 +61,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .formulario-rodape {
-        max-width: 29rem;
-        padding-top: 0;
-        width: 56.512vw;
-    }
 
     /* login.html */
     .formulario-login__inputs {
@@ -74,10 +70,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .formulario-rodape {
-        margin: 0;
-        max-width: 35rem;
-    }
 
     /* login.html */
     .formulario-login {

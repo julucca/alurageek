@@ -2,7 +2,7 @@
 @import "./css/header.css";
 @import "./css/banner.css";
 @import "./css/produtos.css";
-@import "./css/rodape.css";
+@import "./css/footer.css";
 @import "./css/botoes.css";
 @import "./css/formularios.css";
 @import "./css/descricao.css";
@@ -30,17 +30,36 @@ body {
 }
 
 button, a {
-    font-family: var(--fonte-principal);
     border: none;
     box-shadow: none;
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-principal);
     text-decoration: none;
+}
+
+input, label, ::placeholder {
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 1px var(--branco);
+}
+
+h2, h3 {
+    font-weight: 700;
+}
+
+.subtitle__default {
+    font-size: 2rem;
+    line-height: 2.375rem;
 }
 
 .container {
     background-color: var(--cinza-bg);
 }
 
-.titulo {
+/* .titulo {
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 1.625rem;
@@ -57,7 +76,7 @@ button, a {
 .titulo__descricao {
     font-weight: 500;
     margin-bottom: .5rem;
-}
+} */
 
 @media screen and (min-width: 768px) {
     .titulo__produtos {

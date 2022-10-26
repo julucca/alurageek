@@ -1,0 +1,92 @@
+.footer__container {
+    background-color: var(--azul-claro);
+}
+
+.footer__company {
+    padding: 1rem;  
+}
+
+.footer__company-list {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer__list-item {
+    margin-top: 1rem;
+}
+
+.footer__company-form {
+    max-width: 26rem;
+    margin: 0 auto;
+}
+
+/* form footer in form.css for reuse */
+
+.footer__developer {
+    background-color: var(--branco);
+    padding: 2rem;
+}
+
+.footer__developer-text {
+    line-height: 1.187rem;
+    text-align: center;
+    margin: auto;
+    width: 70vw;
+    max-width: 17.125rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .footer__company {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 0 auto;
+        max-width: 47rem;
+        padding: 2rem;
+    }
+
+    .footer__company-list {
+        margin-bottom: 0;
+        text-align: left;
+        width: 33.073vw;
+    }
+
+    .footer__list-item {
+        margin-top: 1.5rem;
+    }
+
+    .footer__list-item:first-child {
+        margin-top: 1rem;
+    }
+   
+    .footer__company-form {
+        width: 56.5vw;
+        max-width: none;
+    }
+
+    .footer__developer-text {
+        width: 15rem;
+    }  
+}
+
+@media screen and (min-width: 1280px) {
+    
+    .footer__company {
+        padding: 4rem 0;
+        gap: 7rem;
+        max-width: 71rem;
+    }
+
+    .footer__company-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: none;
+        width: 29rem;
+    }
+
+    .footer__company-form {
+        width: 35rem;
+    }
+}

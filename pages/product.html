@@ -93,42 +93,58 @@
             
         </section>
     </main>
-    
+
     <footer>
-        <section class="rodape">
-            <div class="rodape__container">              
-                <div class="rodape__institucional">
-                    
+        <section class="footer__container">
+            <div class="footer__company">
+                <div class="footer__company-list">
                     <a href="../index.html">
-                        <img src="../img/logo-alurageek.svg" alt="Logo AluraGeek" class="rodape__logo">
+                        <img src="../img/logo-alurageek.svg" alt="Logo AluraGeek" class="footer__logo">
                     </a>
-                    
-                    <ul class="rodape__lista">
-                        <li><a class="rodape__lista-item">Quem somos nós</a></li>
-                        <li><a class="rodape__lista-item">Política de privacidade</a></li>
-                        <li><a class="rodape__lista-item">Programa fidelidade</a></li>
-                        <li><a class="rodape__lista-item">Nossas lojas</a></li>
-                        <li><a class="rodape__lista-item">Quero ser franqueado</a></li>
-                        <li><a class="rodape__lista-item">Anuncie aqui</a></li>
+            
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a>Quem somos nós</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a>Política de privacidade</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a>Programa fidelidade</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a>Nossas lojas</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a>Quero ser franqueado</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a>Anuncie aqui</a>
+                        </li>
                     </ul>
                 </div>
-
-                <form action="#" class="formulario formulario-rodape">
-                    <h2 class="formulario__titulo">Fale conosco</h2>
-
-                    <div>
-                        <label for="name"></label>
-                        <input type="text" id="name" placeholder="Escreva seu nome" class="formulario__inputs formulario-rodape__nome">
-                    </div>
-                    
-                    <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" class="formulario__inputs formulario-rodape__mensagem"></textarea>
-                    <button type="submit" class="botao botao__rodape">Enviar mensagem</button>
-                </form>
+    
+                <div class="footer__company-form">
+                    <h2>Fale conosco</h2>
+        
+                    <form action="#">
+                        <div class="form__input">
+                            <label for="name" class="form__label">Nome</label>
+                            <input type="text" id="name" placeholder="Escreva seu nome" class="form__label-textfield form__input-field">
+                        </div>
+        
+                        <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" class="form__input form__input-field form__input-textfield"></textarea>
+        
+                        <button type="submit" class="botao botao__rodape">Enviar mensagem</button>
+                    </form>
+                </div>
             </div>
         </section>
-        
-        <p class="rodape__texto">Desenvolvido por Juliana Lucca 2022</p>
+    
+        <section class="footer__developer">
+            <p class="footer__developer-text">Desenvolvido por <span><a href="https://github.com/julucca">Juliana Lucca</a></span> 2022</p>
+        </section>
     </footer>
-
+    
 </body>
 </html>
