@@ -21,6 +21,7 @@
     --fonte-principal: 'Raleway', sans-serif;
 }
 
+/* -------- general styles */
 body {
     font-family: var(--fonte-principal);
     color: var(--cinza-escuro);
