@@ -3,7 +3,7 @@
 @import "./css/banner.css";
 @import "./css/produtos.css";
 @import "./css/footer.css";
-@import "./css/botoes.css";
+@import "./css/buttons.css";
 @import "./css/formularios.css";
 @import "./css/descricao.css";
 
@@ -33,7 +33,6 @@ body {
 button, a {
     border: none;
     box-shadow: none;
-    color: var(--cinza-escuro);
     font-family: var(--fonte-principal);
     text-decoration: none;
 }
@@ -77,7 +76,7 @@ h2, h3 {
 .titulo__descricao {
     font-weight: 500;
     margin-bottom: .5rem;
-} */
+}
 
 @media screen and (min-width: 768px) {
     .titulo__produtos {
@@ -95,4 +94,4 @@ h2, h3 {
         font-size: 3.25rem;
         line-height: 3.812rem;
     }
-}
+} */
