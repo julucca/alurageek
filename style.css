@@ -1,7 +1,7 @@
 @import "./css/reset.css";
 @import "./css/header.css";
 @import "./css/banner.css";
-@import "./css/produtos.css";
+@import "./css/products.css";
 @import "./css/footer.css";
 @import "./css/buttons.css";
 @import "./css/formularios.css";
@@ -51,8 +51,8 @@ h2, h3 {
 }
 
 .subtitle__default {
-    font-size: 2rem;
-    line-height: 2.375rem;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
 }
 
 .container {
@@ -83,8 +83,13 @@ h2, h3 {
         margin-bottom: 0;
     }
 }
-
+*/
 @media screen and (min-width: 1280px) {
+    .subtitle__default {
+        font-size: 2rem;
+        line-height: 2.375rem;
+    }
+/*
     .titulo {
         font-size: 2rem;
         line-height: 2.375rem;
@@ -94,4 +99,5 @@ h2, h3 {
         font-size: 3.25rem;
         line-height: 3.812rem;
     }
-} */
+*/
+}
