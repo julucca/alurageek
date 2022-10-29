@@ -40,55 +40,65 @@
     resize: none;
 }
 
-/* login.html */
-.formulario-login {
+/* -------- form login.html */
+.form-login {
     padding: 6.062rem 2.5rem 4.75rem;
     text-align: center;
 }
 
-.formulario-login__titulo {
-    margin-bottom: .5rem;
-}
-
-.formulario-login__inputs {
+.form-login__input {
     max-width: 17.187rem;
     padding: .625rem .75rem;
+    margin: 1rem auto;
 }
 
-/* admin.html */
-.formulario-add__inputs {
-    padding: 1rem 0;
+/* -------- form add-product.html */
+.form-add {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 26rem;
+}
+
+.form-add__input {
+    margin: 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
 
-    /* login.html */
-    .formulario-login__inputs {
+    /* -------- form login.html */
+    .form-login__input {
         max-width: 26.437rem;
         width: 36vw;
+    }
+
+    /* -------- form add-product.html */
+    .form-add {
+        padding: 2rem;
+        max-width: 47rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
 
-    /* login.html */
-    .formulario-login {
+    /* -------- form login.html */
+    .form-login__title {
+        font-size: 1.125rem;
+        line-height: 1.312rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-login {
         padding: 5.75rem 2.5rem 5.687rem;
     }
 
-    .formulario-login__inputs {
+    .form-login__input {
         padding: 1.343rem .75rem;
+        margin: 1.5rem auto;
     }
 
-    .formulario-login__titulo {
-        font-size: 1.125rem;
-        line-height: 1.312rem;
-        margin-bottom: 1.05rem;
-    }
-
-    /* admin.html */
-    .formulario-add {
+    /* -------- form add-product.html */
+    .form-add {
+        padding: 4rem;
         max-width: 34.937rem;
     }
-
 }

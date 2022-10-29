@@ -30,32 +30,32 @@
         <img src="../img/icone-pesquisa-mobile.svg" alt="Ícone de busca" class="header__search-icon">
     </header>
 
-    <main class="container produto__container">
-        <section>
-            <form action="#" class="produto formulario formulario-add">
-                <h2 class="titulo titulo__add">Adicionar novo produto</h2>
+    <main>
+        <section class="container">
+            <form action="#" class="form-add">
+                <h2 class="subtitle__default">Adicionar novo produto</h2>
 
-                <div>
-                    <label for="url"></label>
-                    <input type="url" id="url" placeholder="URL da imagem" class="formulario__inputs formulario-add__inputs">
+                <div class="form__input form-add__input">
+                    <label for="url" class="form__label">URL da imagem</label>
+                    <input type="url" id="url" class="form__label-textfield form__input-field">
                 </div>
 
-                <div>
-                    <label for="categoria"></label>
-                    <input type="text" id="categoria" placeholder="Categoria" class="formulario__inputs formulario-add__inputs">
+                <div class="form__input form-add__input">
+                    <label for="categoria" class="form__label">Categoria</label>
+                    <input type="text" id="categoria" class="form__label-textfield form__input-field">
                 </div>
 
-                <div>
-                    <label for="produto"></label>
-                    <input type="text" id="produto" placeholder="Nome do produto" class="formulario__inputs formulario-add__inputs">
+                <div class="form__input form-add__input">
+                    <label for="produto" class="form__label">Nome do produto</label>
+                    <input type="text" id="produto" class="form__label-textfield form__input-field">
                 </div>
 
-                <div>
-                    <label for="preco"></label>
-                    <input type="number" id="preco" placeholder="Preço do produto" class="formulario__inputs formulario-add__inputs">
+                <div class="form__input form-add__input">
+                    <label for="preco" class="form__label">Preço do produto</label>
+                    <input type="number" id="preco" class="form__label-textfield form__input-field">
                 </div>
-
-                <textarea type="text" placeholder="Descrição do produto" maxlength="120" class="formulario__inputs formulario-add__inputs formulario-rodape__mensagem"></textarea>
+                
+                <textarea type="text" placeholder="Descrição do produto" maxlength="120" class="form__input form__input-field form__input-textfield"></textarea>
                 
                 <button type="submit" class="button--primary button-add--primary">Adicionar produto</button>
             </form>
