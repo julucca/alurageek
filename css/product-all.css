@@ -1,0 +1,65 @@
+/* -------- all-products.html */
+.product-all {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 21.5rem;
+}
+
+.product-all__header {
+    margin-bottom: 1rem;
+}
+
+.product-all__title {
+    margin-bottom: 1rem;
+}
+
+.product-all__info {
+    position: relative;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.product-all__icons {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 1;
+}
+
+.product-all__delete {
+    margin-right: 1rem;
+}
+
+.product-all__card-image {
+    max-width: 10.25rem;
+    min-width: 8.75rem;
+    width: 38.89vw;
+}
+
+.product-all__card-name {
+    width: 8.75rem;
+}
+
+.product-all__code {
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .product-all {
+        max-width: 47.45rem;
+        width: 91.668vw;
+    }
+    
+    .product-all__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .product-all {
+        width: 71rem;
+        max-width: none;
+    }
+}

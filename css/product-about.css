@@ -1,34 +1,38 @@
-.descricao__imagem {
+/* -------- about-product.html */
+.product-about__image {
     width: 100vw;
     height: 12rem;
     object-fit: cover;
 }
 
-.descricao__produto {
-    max-width: 24rem;
-    padding: 1rem;
-    margin: 0 auto;
+.product-about__title {
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 1.614rem;
 }
 
-.descricao__preco {
-   font-weight: 700;
+.product-about__price {
+    font-size: 1rem;
+    line-height: 1.173rem;
+    margin: .5rem 0;
 }
 
-.descricao__texto {
+.product-about__text {
     font-size: .875rem;
     font-weight: 400;
 }
 
-.descricao__card {
-    margin-top: 1rem;;
+.product-about__subtitle {
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .descricao__container {
+
+    .product-about__container {
         background-color: var(--cinza-bg);
     }
-    
-    .descricao {
+
+    .product-about {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,13 +40,13 @@
         padding: 2rem;
     }
 
-    .descricao__imagem {
+    .product-about__image {
         max-width: 17.159rem;
         width: 33vw;
         height: 9.812rem;
     }
 
-    .descricao__produto {
+    .product-about__content {
         max-width: 29.38rem;
         padding: 0;
         margin: 0;
@@ -51,24 +55,31 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .descricao {
+    
+    .product-about {
         padding: 4rem 0 0;
     }
 
-    .descricao__imagem {
+    .product-about__image {
         max-width: 35rem;
         width: 50vw;
         height: 25.187rem;
     }
 
-    .descricao__produto {
+    .product-about__content {
         max-width: 35rem;
         padding: 0;
         width: 50vw;
     }
 
-    .descricao__texto {
+    .product-about__title {
+        font-size: 3.25rem;
+        font-weight: 500;
+        line-height: 3.812rem;
+    }
+
+    .product-about__text {
         font-size: 1rem;
         line-height: 1.187rem;
-    }
+    } 
 }
