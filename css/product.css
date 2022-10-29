@@ -17,7 +17,7 @@
 .product__category-link {
     display: flex;
     align-items: center;
-    color: var(--azul);
+    color: var(--blue);
     gap: .25rem;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .product__card-link {
-    color: var(--azul);
+    color: var(--blue);
 }
 
 @media screen and (min-width: 768px) {

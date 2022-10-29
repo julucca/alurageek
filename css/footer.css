@@ -1,5 +1,5 @@
 .footer__container {
-    background-color: var(--azul-claro);
+    background-color: var(--light-blue);
 }
 
 .footer__company {
@@ -23,7 +23,7 @@
 /* form footer in form.css for reuse */
 
 .footer__developer {
-    background-color: var(--branco);
+    background-color: var(--white);
     padding: 2rem;
 }
 

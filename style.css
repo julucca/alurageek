@@ -10,23 +10,23 @@
 @import "./css/descricao.css";
 
 :root {
-    --branco: #FFFFFF;
-    --azul: #2A7AE4;
-    --azul-claro: #EAF2FD;
-    --azul-claro-hover: #D4E4FA;
-    --azul-medio-hover: #5595E9;
-    --cinza-escuro: #464646;
-    --cinza-medio: #a2a2a2;
-    --cinza-claro: #c8c8c8;
-    --cinza-bg: #F5F5F5;
+    --white: #FFFFFF;
+    --blue: #2A7AE4;
+    --blue-secondary: #5595E9;
+    --light-blue-secondary: #D4E4FA;
+    --light-blue: #EAF2FD;
+    --dark-grey: #464646;
+    --grey: #a2a2a2;
+    --light-grey: #c8c8c8;
+    --bg-grey: #F5F5F5;
 
-    --fonte-principal: 'Raleway', sans-serif;
+    --main-font: 'Raleway', sans-serif;
 }
 
 /* -------- general styles */
 body {
-    font-family: var(--fonte-principal);
-    color: var(--cinza-escuro);
+    font-family: var(--main-font);
+    color: var(--dark-grey);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1rem;
@@ -35,17 +35,17 @@ body {
 button, a {
     border: none;
     box-shadow: none;
-    font-family: var(--fonte-principal);
+    font-family: var(--main-font);
     text-decoration: none;
 }
 
 input, label, ::placeholder {
     font-weight: 400;
-    font-family: var(--fonte-principal);
+    font-family: var(--main-font);
 }
 
 input:focus, textarea:focus, select:focus {
-    outline: 1px var(--branco);
+    outline: 1px var(--white);
 }
 
 h2, h3 {
@@ -58,48 +58,12 @@ h2, h3 {
 }
 
 .container {
-    background-color: var(--cinza-bg);
+    background-color: var(--bg-grey);
 }
 
-/* .titulo {
-    font-size: 1.375rem;
-    font-weight: 700;
-    line-height: 1.625rem;
-}
-
-.titulo__produtos {
-    margin-bottom: 1rem;
-}
-
-.titulo__add {
-    margin-bottom: .5rem;
-}
-
-.titulo__descricao {
-    font-weight: 500;
-    margin-bottom: .5rem;
-}
-
-@media screen and (min-width: 768px) {
-    .titulo__produtos {
-        margin-bottom: 0;
-    }
-}
-*/
 @media screen and (min-width: 1280px) {
     .subtitle__default {
         font-size: 2rem;
         line-height: 2.375rem;
     }
-/*
-    .titulo {
-        font-size: 2rem;
-        line-height: 2.375rem;
-    }
-
-    .titulo__descricao {
-        font-size: 3.25rem;
-        line-height: 3.812rem;
-    }
-*/
 }

@@ -12,7 +12,7 @@
 }
 
 .banner__content {
-    color: var(--branco);
+    color: var(--white);
     margin: 0 auto;
     max-width: 24rem;
     width: 91vw;

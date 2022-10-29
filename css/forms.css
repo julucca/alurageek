@@ -9,22 +9,22 @@
 .form__input-field {
     border: none;
     border-radius: 0 0 .25rem .25rem;
-    box-shadow: 0 1px .5px var(--cinza-claro);
+    box-shadow: 0 1px .5px var(--light-grey);
     box-sizing: border-box;
-    color: var(--cinza-escuro);
+    color: var(--dark-grey);
     font-size: 1rem;
     line-height: 1.25rem;
 }
 
 .form__input-field::placeholder {
-    color: var(--cinza-medio);
+    color: var(--grey);
     font-size: 1rem;
 }
 
 .form__label {
-    background-color: var(--branco);
+    background-color: var(--white);
     border-radius: .25rem .25rem 0 0;
-    color: var(--cinza-medio);
+    color: var(--grey);
     font-size: .75rem;
     padding: .5rem .75rem .25rem;   
 }
