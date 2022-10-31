@@ -33,15 +33,15 @@
             <form action="#" class="container form-login">
                 <h2 class="form-login__title">Iniciar Sessão</h2>
 
-                <div>
+                <fieldset>
                     <label for="email"></label>
-                    <input type="email" id="email" placeholder="Escreva seu email" class="form__input form__input-field form-login__input">
-                </div>
+                    <input type="email" id="email" placeholder="Escreva seu email" required class="form__input form__input-field form-login__input">
+                </fieldset>
 
-                <div>
+                <fieldset>
                     <label for="senha"></label>
-                    <input type="password" id="senha" placeholder="Escreva sua senha" class="form__input form__input-field form-login__input">
-                </div>
+                    <input type="password" id="senha" placeholder="Escreva sua senha" required class="form__input form__input-field form-login__input">
+                </fieldset>
                 
                 <button type="submit" class="button--primary button__login">Entrar</button>
             </form>
@@ -82,12 +82,12 @@
                     <h2>Fale conosco</h2>
         
                     <form action="#">
-                        <div class="form__input">
+                        <fieldset class="form__input">
                             <label for="name" class="form__label">Nome</label>
-                            <input type="text" id="name" placeholder="Escreva seu nome" class="form__label-textfield form__input-field">
-                        </div>
+                            <input type="text" id="name" required placeholder="Escreva seu nome" class="form__label-textfield form__input-field">
+                        </fieldset>
         
-                        <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" class="form__input form__input-field form__input-textfield"></textarea>
+                        <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" required class="form__input form__input-field form__input-textfield"></textarea>
         
                         <button type="submit" class="button--primary">Enviar mensagem</button>
                     </form>

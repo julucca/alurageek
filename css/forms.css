@@ -41,6 +41,10 @@
 }
 
 /* -------- form login.html */
+.form-login__title {
+    margin-bottom: 1rem;
+}
+
 .form-login {
     padding: 6.062rem 2.5rem 4.75rem;
     text-align: center;
@@ -49,7 +53,7 @@
 .form-login__input {
     max-width: 17.187rem;
     padding: .625rem .75rem;
-    margin: 1rem auto;
+    margin: 0 auto 1rem;
 }
 
 /* -------- form add-product.html */
@@ -93,7 +97,7 @@
 
     .form-login__input {
         padding: 1.343rem .75rem;
-        margin: 1.5rem auto;
+        margin: 0 auto 1.5rem;
     }
 
     /* -------- form add-product.html */
