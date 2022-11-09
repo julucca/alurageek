@@ -1,8 +1,8 @@
 /* -------- form footer */
+
 .form__input {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: .5rem 0;
 }
 
@@ -14,6 +14,7 @@
     color: var(--dark-grey);
     font-size: 1rem;
     line-height: 1.25rem;
+    width: 100%;
 }
 
 .form__input-field::placeholder {
@@ -27,6 +28,7 @@
     color: var(--grey);
     font-size: .75rem;
     padding: .5rem .75rem .25rem;   
+
 }
 
 .form__label-textfield {
@@ -51,9 +53,18 @@
 }
 
 .form-login__input {
-    max-width: 17.187rem;
-    padding: .625rem .75rem;
     margin: 0 auto 1rem;
+    max-width: 17.187rem;
+}
+
+.form-login__input-field {
+    padding: .625rem .75rem;
+}
+
+.message-error {
+    font-size: .75rem;
+    color: red;
+    margin-top: .25rem;
 }
 
 /* -------- form add-product.html */
@@ -96,8 +107,16 @@
     }
 
     .form-login__input {
-        padding: 1.343rem .75rem;
         margin: 0 auto 1.5rem;
+    }
+
+    .form-login__input-field {
+        padding: 1.343rem .75rem;
+    }
+
+    .message-error {
+        font-size: .85rem;
+        margin-top: .35rem;
     }
 
     /* -------- form add-product.html */

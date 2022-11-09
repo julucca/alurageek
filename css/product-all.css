@@ -46,8 +46,9 @@
 
 @media screen and (min-width: 768px) {
     .product-all {
-        max-width: 47.45rem;
+        max-width: 44rem;
         width: 91.668vw;
+        margin: 0 auto;
     }
     
     .product-all__header {
@@ -55,11 +56,19 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .product-all__title {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     .product-all {
         width: 71rem;
-        max-width: none;
+        max-width: 71rem;
+    }
+
+    .product-all__card-image {
+        max-width: 11rem;
     }
 }
