@@ -30,17 +30,19 @@
 
     <main>
         <section>
-            <form action="#" class="container form-login">
+            <form class="container form-login" data-formLogin>
                 <h2 class="form-login__title">Iniciar Sessão</h2>
 
-                <fieldset>
+                <fieldset class="form__input form-login__input">
                     <label for="email"></label>
-                    <input type="email" id="email" placeholder="Escreva seu email" required class="form__input form__input-field form-login__input">
+                    <input type="email" id="email" placeholder="Escreva seu email" required class="form__input-field form-login__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
 
-                <fieldset>
-                    <label for="senha"></label>
-                    <input type="password" id="senha" placeholder="Escreva sua senha" required class="form__input form__input-field form-login__input">
+                <fieldset class="form__input form-login__input">
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Escreva sua senha" required class="form__input-field form-login__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
                 
                 <button type="submit" class="button--primary button__login">Entrar</button>
@@ -99,6 +101,8 @@
             <p class="footer__developer-text">Desenvolvido por <span><a href="https://github.com/julucca">Juliana Lucca</a></span> 2022</p>
         </section>
     </footer>
+
+    <script src="../js/script.js" type="module"></script>
 
 </body>
 </html>
