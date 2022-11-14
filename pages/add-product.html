@@ -32,30 +32,37 @@
 
     <main>
         <section class="container">
-            <form action="#" class="form-add">
+            <form action="#" class="form-add" data-addForm>
                 <h2 class="subtitle__default">Adicionar novo produto</h2>
 
                 <fieldset class="form__input form-add__input">
                     <label for="url" class="form__label">URL da imagem</label>
                     <input type="url" id="url" required class="form__label-textfield form__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
 
                 <fieldset class="form__input form-add__input">
                     <label for="categoria" class="form__label">Categoria</label>
                     <input type="text" id="categoria" required class="form__label-textfield form__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
 
                 <fieldset class="form__input form-add__input">
                     <label for="produto" class="form__label">Nome do produto</label>
-                    <input type="text" id="produto" required class="form__label-textfield form__input-field">
+                    <input type="text" id="produto" maxlength="20" required class="form__label-textfield form__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
 
                 <fieldset class="form__input form-add__input">
                     <label for="preco" class="form__label">Preço do produto</label>
-                    <input type="text" id="preco" required class="form__label-textfield form__input-field">
+                    <input type="text" id="preco" required pattern="^[R$]?[0-9]*[\.,]?[0-9]?[0-9]?$" class="form__label-textfield form__input-field">
+                    <span class="message-error"></span>
                 </fieldset>
                 
-                <textarea type="text" placeholder="Descrição do produto" maxlength="120" required class="form__input form__input-field form__input-textfield"></textarea>
+                <div>
+                    <textarea type="text" id="descricao" placeholder="Descrição do produto" maxlength="150" required class="form__input form__input-field form__input-textfield"></textarea>
+                    <span class="message-error"></span>
+                </div>
                 
                 <button type="submit" class="button--primary button-add--primary">Adicionar produto</button>
             </form>
@@ -121,6 +128,7 @@
     </footer>
 
     <script src="../js/script.js"></script>
+    <script src="../js/add-product.js"></script>
 
 </body>
 </html>

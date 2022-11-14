@@ -30,6 +30,21 @@ const messages = {
     },
     message: {
         valueMissing: "O campo mensagem não pode estar vazio."
+    },
+    url: {
+        valueMissing: "O campo url não pode estar vazio."
+    },
+    categoria: {
+        valueMissing: "O campo categoria não pode estar vazio."
+    },
+    produto: {
+        valueMissing: "O campo produto não pode estar vazio."
+    },
+    preco: {
+        valueMissing: "O campo preço não pode estar vazio."
+    },
+    descricao: {
+        valueMissing: "O campo descrição não pode estar vazio."
     }
 }
 
