@@ -222,13 +222,19 @@
                 <div class="footer__company-form">
                     <h2>Fale conosco</h2>
         
-                    <form action="#">
-                        <div class="form__input">
+                    <form data-contactForm>
+                        <fieldset class="form__input">
                             <label for="name" class="form__label">Nome</label>
-                            <input type="text" id="name" placeholder="Escreva seu nome" class="form__label-textfield form__input-field">
+                            <input type="text" id="name"  placeholder="Escreva seu nome" class="form__label-textfield form__input-field" maxlength="40" required>
+                            <span class="message-error"></span>
+                        </fieldset>
+
+                        <div class="form__input">
+                            <textarea type="text" id="message" placeholder="Escreva sua mensagem" class="form__input-field form__input-textfield" maxlength="120" required></textarea>
+                            <span class="message-error"></span>  
                         </div>
-        
-                        <textarea type="text" placeholder="Escreva sua mensagem" maxlength="120" class="form__input form__input-field form__input-textfield"></textarea>
+                        
+                        <p class="form__alert"></p>
         
                         <button type="submit" class="button--primary">Enviar mensagem</button>
                     </form>
@@ -240,6 +246,8 @@
             <p class="footer__developer-text">Desenvolvido por <span><a href="https://github.com/julucca">Juliana Lucca</a></span> 2022</p>
         </section>
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

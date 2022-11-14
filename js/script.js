@@ -1,4 +1,4 @@
-// -------- Login Form [check inputs + error message] 
+// -------- Forms [check inputs + error message] 
 
 const formInputs = document.querySelectorAll("[required]");
 
@@ -22,7 +22,14 @@ const messages = {
         tooShort: "Por favor, peencha um e-mail válido."
     },
     password: {
-        valueMissing: "O campo de senha não pode estar vazio."
+        valueMissing: "O campo de senha não pode estar vazio.",
+        patternMismatch: "Por favor, preencha uma senha válido. A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+    },
+    name: {
+        valueMissing: "O campo nome não pode estar vazio."
+    },
+    message: {
+        valueMissing: "O campo mensagem não pode estar vazio."
     }
 }
 
@@ -33,7 +40,6 @@ function checkInput(input) {
     typesOfErrors.forEach(error => {
         if (input.validity[error]) {
             message = messages[input.id][error];
-            console.log(message);
         }
 
         const errorMessage = input.parentNode.querySelector(".message-error");
@@ -41,28 +47,39 @@ function checkInput(input) {
 
         if (!inputValidator) {
             errorMessage.textContent = message;
-            input.style.border = "2px solid red";
+            input.classList.add("input--invalid");
         } else {
             errorMessage.textContent = "";
-            input.style.border = "none";
+            input.classList.remove("input--invalid");
         }
     })
 }
 
 
-// -------- Login Form [submit form]
+// -------- Contact | Footer [submit form] 
 
-const formLogin = document.querySelector("[data-formLogin]");
+const contactForm = document.querySelector("[data-contactForm]");
+const contactInputs = document.querySelectorAll("[required]");
 
-formLogin.addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const dataLogin = {
-        "email": event.target.elements["email"].value,
-        "password": event.target.elements["password"].value
+    const alert = event.target.querySelector(".form__alert")
+
+    const dataContact = {
+        "name": event.target.elements["name"].value,
+        "message": event.target.elements["message"].value
     }
 
-    localStorage.setItem("data", JSON.stringify(dataLogin));
+    if (dataContact) {
+        alert.innerText = "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+        alert.classList.add("form__alert--success")
 
-    window.location.href = "../pages/all-products.html";
+        setTimeout(() => {
+            alert.classList.remove("form__alert--success")
+            alert.innerText = "";
+        }, 5000);
+    } 
+
+    contactForm.reset();
 })
